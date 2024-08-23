@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .item {
+            width: 600px;
+            height: 600px;
+            justify-content: center;
+            justify-items: center;
+            position: relative;
+            background-size: cover;
+        }
+
+        .K {
+            border-radius: 15px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .A,
+        .V,
+        .I,
+        .T {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            justify-content: center;
+            justify-items: center;
+            top: 80px;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        .A {
+            background-color: red;
+            left: 100px;
+            animation-name: redy;
+        }
+
+        .V {
+            background-color: blue;
+            left: 140px;
+            animation-name: bluey;
+            animation-delay: 0.25s;
+        }
+
+        .I {
+            background-color: green;
+            left: 180px;
+            animation-name: greeny;
+            animation-delay: 0.5s;
+        }
+
+        .T {
+            background-color: orange;
+            left: 220px;
+            animation-name: orangey;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes redy {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+        }
+
+        @keyframes bluey {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+        }
+
+        @keyframes greeny {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+        }
+
+        @keyframes orangey {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div items>
+        <div class="container">
+            <form action="" class="search-bar">
+                <input type="text" placeholder="Search anything" name="q">
+        
+            </form>
+
+            <div class="item">
+                <div class="K"></div>
+                <div class="A"></div>
+                <div class="V"></div>
+                <div class="I"></div>
+                <div class="T"></div>
+            </div>
+        </div>
+</body>
+
+</html>
